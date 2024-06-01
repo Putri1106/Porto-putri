@@ -1,0 +1,320 @@
+{% load static  %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'boxicons/css/boxicons.min.css' %}">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> 
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+          <a class="text-pink navbar-brand fw-bold" href="#">SANDRINA EKA PUTRI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#header">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#activity">Activity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HEADER -->
+      <section class="header-section" id="header">
+        <div class="container">
+          <div class="row align-items-center justity-content-between">
+            <div class="col-md-6">
+              <h1 class="header-title text-uppercase fw-bold mb-5">
+                Network Engineer <br class="d-none d-md-block" />At Telkom University
+              </h1>
+              <h2 class="text-pink fw-semibold">About Me</h2 >
+              <p class="section-title mb-5">I am a student at Telkom University, Bachelor of Engineering Study Program
+                Telecommunication, Faculty of Electrical Engineering. Have a high interest in learning and adapting to technology
+                which continues to grow. Have the achievement to become a student who graduates with
+                the best grades and have a profession according to the skills they have.</p>
+
+              
+            </div>
+            <div class="col-md-5">
+              <img src="static/images/porto.jpg" class="header-img" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="portfolio-section" id="education">
+        <div class="container">
+          <p class="text-pink fw-semibold">Education</p >
+          <h2 class="section-title mb-5">Education Periode</h2>
+
+          <div class="swiper portofolio-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                    src="static/images/smktelkom.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3">
+                    <h6 class="fw-semibold">SMK Telkom Jakarta</h6>
+                    <h6 class="text-black">2020 - 2023</h6>
+                    <a href="https://telkomschools.sch.id/smk-telkom-jakarta/" class="text-pink">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <img
+                    src="static/images/telyu.jpg"
+                    alt=""
+                    class="card-img-top rounded mb-3">
+                    <h6 class="fw-semibold">Telkom University</h6>
+                    <h6 class="text-black">2023</h6>
+                    <a href="https://telkomuniversity.ac.id/" class="text-pink">Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills-section" id="skills">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-6">
+              <p class="text-pink fw-semibold">Skills</p>
+              <h2 class="section-title mb-5">Hard Skills</h2>
+
+              <div class="mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <p class="text-black text-uppercase fw-semibold mb-8">Microsoft</p>
+                  <p class="text-black text-uppercase mb-6">75%</p>
+                </div>
+                <div class="progress-bar">
+                  <span class="progress" style="width: 75%"></span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <p class="text-black text-uppercase fw-semibold mb-8">Python</p>
+                  <p class="text-black text-uppercase mb-6">20%</p>
+                </div>
+                <div class="progress-bar">
+                  <span class="progress" style="width: 20%"></span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <p class="text-black text-uppercase fw-semibold mb-8">Bahasa C</p>
+                  <p class="text-black text-uppercase mb-6">30%</p>
+                </div>
+                <div class="progress-bar">
+                  <span class="progress" style="width: 30%"></span>
+                </div> 
+              </div>
+            </div>
+           </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="experience-section" id="experience">
+          <div class="container">
+            <p class="text-pink fw-semibold">Experience</p>
+            <h2 class="section-title mb-5">Experience period</h2>
+
+            <div class="row py-3 border-bottom">
+              <div class="col-md-4">2018</div>
+              <div class="col-md-4">ACARA AVAS</div>
+              <div class="col-md-4">SEKRETARIS</div>
+            </div>
+            <div class="row py-3 border-bottom">
+              <div class="col-md-4">2019</div>
+              <div class="col-md-4">ACARA MPLS</div>
+              <div class="col-md-4">SEKRETARIS</div>
+            </div>
+            <div class="row py-3 border-bottom">
+              <div class="col-md-4">2020 - 2021</div>
+              <div class="col-md-4">OSIS SMK TELKOM JAKARTA</div>
+              <div class="col-md-4">SEKBID 1 KEROHANIAN</div>
+            </div>
+            <div class="row py-3 border-bottom">
+              <div class="col-md-4">2022</div>
+              <div class="col-md-4">PRAKTIK KERJA INDUSTRI</div>
+              <div class="col-md-4">KURIKULUM SMK TELKOM JAKARTA</div>
+            </div>
+            <div class="row py-3 border-bottom">
+              <div class="col-md-4">2023</div>
+              <div class="col-md-4">ADAPTIVE NETSCHOOL</div>
+              <div class="col-md-4">PESERTA</div>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ACTIVITY -->
+        <section class="portfolio-section" id="activity">
+          <div class="container">
+            <p class="text-pink fw-semibold">Activity</p >
+            <h2 class="section-title mb-5">selected works</h2>
+  
+            <div class="swiper portofolio-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                      src="static/images/hastja.jpg"
+                      alt=""
+                      class="card-img-top rounded mb-3">
+                      <h6 class="fw-semibold">HASTJA</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                      src="static/images/netschool.jpg"
+                      alt=""
+                      class="card-img-top rounded mb-3">
+                      <h6 class="fw-semibold">NETSCHOOL</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                      src="static/images/netdev.png"
+                      alt=""
+                      class="card-img-top rounded mb-3">
+                      <h6 class="fw-semibold">NETDEV</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                      src="static/images/collagestudent.jpg"
+                      alt=""
+                      class="card-img-top rounded mb-3">
+                      <h6 class="fw-semibold">COLLEGE STUDENT</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-end gap-3">
+                <button
+                  class="btn btn-Light d-flex align-items-center justify-content-center btn-next"
+                >
+                  <i class="bx bx-left-arrow-alt fs-5"></i>
+                </button>
+                <button
+                  class="btn btn-light d-flex align-items-center justify-content-center btn-prev"
+                >
+                  <i class="bx bx-right-arrow-alt fs-5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row align-item-center justify-content-between">
+                <div class="col-md-6">
+                    
+                    <p class="text-orange fw-semibold">Contact</p>
+                    <h2 class="section-title mb-5">get in touch</h2>
+                    <p class="text-secondary mb-3">
+                      It's been a pleasure getting to know you guys, please contact me and let's be friends!
+                    </p>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="bx bx-map-pin text-orange fs-5"></i>
+                        <div class="mb-0">Sandrina Eka Putri, Jakarta Barat, DKI Jakarta</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="bx bx-phone-call text-orange fs-5"></i>
+                        <div class="mb-0">+62 8224 6184 833</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="bx bx-envelope text-orange fs-5"></i>
+                        <div class="mb-0">sandrinaekaputri116@gmail.com</div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Name" class="form-control rounded-0 mb-2">
+                        <input type="email" name="email" id="email" placeholder="Email" class="form-control rounded-0 mb-2">
+                        <textarea name="body" id="body" placeholder="Message" cols="30" rows="3" class="form-control rounded-0 mb-3"></textarea>
+                        <button class="btn btn-pink w-100 rounded-0">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".portofolio-swiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation:{
+            nextEl: ".btn-prev",
+            prevEl: ".btn-next",
+          },
+          breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+          },
+        });
+      </script>
+  </body>
+</html>
